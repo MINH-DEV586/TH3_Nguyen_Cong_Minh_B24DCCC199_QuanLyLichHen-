@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_appointment_card"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <!-- Tên lịch hẹn -->
+    <TextView
+        android:id="@+id/tvItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Họp nhóm đồ án"
+        android:textColor="@color/text_primary"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <!-- Địa điểm -->
+    <TextView
+        android:id="@+id/tvItemLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Địa điểm: Phòng B203"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <!-- Hàng nhãn ngày giờ & nhắc nhở -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Badge Ngày giờ -->
+        <TextView
+            android:id="@+id/tvItemDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pill_datetime"
+            android:text="25/10/2026 · 09:00"
+            android:textColor="@color/red_pill_text"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Badge Nhắc nhở -->
+        <TextView
+            android:id="@+id/tvItemReminderBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_pill_reminder_on"
+            android:text="Có nhắc"
+            android:textColor="@color/pill_reminder_on_text"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
